@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+    --cream: #f7f5f0;
+    --dark: #1a1a18;
+    --mid: #4a4a46;
+    --light: #9a9a92;
+    --accent: #c8a97a;
+    --white: #ffffff;
+    --border: #e8e4dc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background: var(--cream);
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-track {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
