@@ -1,5 +1,6 @@
 import Container from "@/components/common/Container";
 import kitchenImage from "@/assets/images/about-kitchen.jpg";
+import Button from "@/components/common/Button";
 
 const features = [
     "Premium Hardware & Accessories",
@@ -110,25 +111,13 @@ function AboutSection() {
                             ))}
                         </ul>
 
-                        <button
-                            className="
-                mt-10
-                w-fit
-                border
-                border-white/20
-                px-8
-                py-4
-                text-sm
-                uppercase
-                tracking-[0.15em]
-                text-white
-                transition-all
-                hover:bg-white
-                hover:text-[#1a1a18]
-              "
+                        <Button
+                            variant="accent"
+                            className="mt-10 w-fit"
+
                         >
                             Discover Our Story
-                        </button>
+                        </Button>
                     </div>
 
                 </div>

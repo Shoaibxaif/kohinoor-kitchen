@@ -31,6 +31,17 @@ const Button = ({
         variant === "light" &&
         "bg-white text-[#1a1a18] hover:bg-[#c8a97a]",
 
+        variant === "accent" &&
+        `
+        bg-[#C8A97A]
+        text-white
+        border
+        border-[#C8A97A]
+        hover:bg-white
+        hover:text-[#C8A97A]
+        hover:border-[#C8A97A]
+        `,
+
         variant === "outline-light" &&
         "border border-white/20 text-white hover:bg-white hover:text-[#1a1a18]",
 

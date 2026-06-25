@@ -56,7 +56,7 @@ function CTASection() {
                         </Button>
 
                         <Button
-                            variant="outline-light"
+                            variant="accent"
                             href="tel:+919876543210"
                         >
                             Call Now
