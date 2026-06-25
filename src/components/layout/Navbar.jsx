@@ -12,8 +12,8 @@ const navLinks = [
     path: ROUTES.HOME,
   },
   {
-    label: "Kitchens",
-    path: ROUTES.KITCHENS,
+    label: "Modular Kitchens",
+    path: ROUTES.MODULAR_KITCHEN,
   },
   {
     label: "Projects",
@@ -36,7 +36,7 @@ function Navbar() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-[#e8e4dc]">
       <Container>
         <nav className="h-20 flex items-center justify-between">
-          
+
           {/* Logo */}
           <NavLink
             to={ROUTES.HOME}
@@ -58,10 +58,9 @@ function Navbar() {
                     uppercase
                     tracking-[0.15em]
                     transition-colors
-                    ${
-                      isActive
-                        ? "text-[#1a1a18]"
-                        : "text-[#4a4a46] hover:text-[#1a1a18]"
+                    ${isActive
+                      ? "text-[#1a1a18]"
+                      : "text-[#4a4a46] hover:text-[#1a1a18]"
                     }
                   `
                   }
@@ -74,7 +73,7 @@ function Navbar() {
 
           {/* Right Side */}
           <div className="flex items-center gap-4">
-            
+
             {/* Desktop Phone */}
             <a
               href={`tel:${SITE.phone}`}
@@ -112,10 +111,9 @@ function Navbar() {
                     uppercase
                     tracking-[0.15em]
                     transition-colors
-                    ${
-                      isActive
-                        ? "text-[#1a1a18]"
-                        : "text-[#4a4a46]"
+                    ${isActive
+                      ? "text-[#1a1a18]"
+                      : "text-[#4a4a46]"
                     }
                   `
                   }
