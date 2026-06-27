@@ -14,6 +14,11 @@ import lBlueprint from "@/assets/images/layouts/l-shaped/blueprint.svg";
 
 import uHero from "@/assets/images/layouts/u-shaped/hero.jpg";
 import uIntro from "@/assets/images/layouts/u-shaped/intro.jpg";
+import uBlueprint from "@/assets/images/layouts/u-shaped/blueprint.svg"
+import uGallery1 from "@/assets/images/layouts/u-shaped/gallery-1.png";
+import uGallery2 from "@/assets/images/layouts/u-shaped/gallery-2.png";
+import uGallery3 from "@/assets/images/layouts/u-shaped/gallery-3.png";
+import uGallery4 from "@/assets/images/layouts/u-shaped/gallery-4.png";
 
 // Island
 
@@ -24,6 +29,11 @@ import islandIntro from "@/assets/images/layouts/island/intro.jpg";
 
 import parallelHero from "@/assets/images/layouts/parallel/hero.jpg";
 import parallelIntro from "@/assets/images/layouts/parallel/intro.jpg";
+import parallelBlueprint from "@/assets/images/layouts/parallel/blueprint.svg"
+import parallelGallery1 from "@/assets/images/layouts/parallel/gallery-1.png";
+import parallelGallery2 from "@/assets/images/layouts/parallel/gallery-2.png";
+import parallelGallery3 from "@/assets/images/layouts/parallel/gallery-3.png";
+import parallelGallery4 from "@/assets/images/layouts/parallel/gallery-4.png";
 
 // Straight
 
@@ -60,6 +70,12 @@ export const kitchenImages = {
   uShaped: {
     hero: uHero,
     intro: uIntro,
+    blueprint : uBlueprint,
+    gallery1: uGallery1,
+    gallery2: uGallery2,
+    gallery3: uGallery3,
+    gallery4: uGallery4
+
   },
 
   island: {
@@ -70,6 +86,11 @@ export const kitchenImages = {
   parallel: {
     hero: parallelHero,
     intro: parallelIntro,
+    blueprint: parallelBlueprint,
+    gallery1: parallelGallery1,
+    gallery2: parallelGallery2,
+    gallery3: parallelGallery3,
+    gallery4: parallelGallery4
   },
 
   straight: {
