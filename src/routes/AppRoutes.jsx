@@ -8,6 +8,7 @@ import ParallelKitchen from "@/pages/ParallelKitchen";
 import IslandKitchen from "@/pages/IslandKitchen";
 import StraightKitchen from "@/pages/StraightKitchen";
 import PeninsulaKitchen from "@/pages/PeninsulaKitchen";
+import ProjectsPage from "@/pages/Projects";
 
 
 function AppRoutes() {
@@ -21,6 +22,7 @@ function AppRoutes() {
       <Route path={ROUTES.ISLAND_KITCHEN} element={<IslandKitchen />} />
       <Route path={ROUTES.STRAIGHT_KITCHEN} element={<StraightKitchen />} />
       <Route path={ROUTES.PENINSULA_KITCHEN} element={<PeninsulaKitchen />} />
+      <Route path={ROUTES.PROJECTS} element={<ProjectsPage />} />
     </Routes>
   );
 }

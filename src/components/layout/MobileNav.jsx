@@ -39,7 +39,7 @@ const kitchenLinks = [
 const navLinks = [
   {
     label: "Projects",
-    path: ROUTES.GALLERY,
+    path: ROUTES.PROJECTS,
   },
   {
     label: "About",

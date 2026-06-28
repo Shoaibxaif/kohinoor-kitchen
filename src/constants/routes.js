@@ -19,5 +19,5 @@ export const ROUTES = {
 
   CONTACT: "/contact",
 
-  GALLERY: "/gallery",
+  PROJECTS: "/projects",
 };
