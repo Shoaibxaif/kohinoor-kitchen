@@ -781,5 +781,216 @@ benefits: {
     },
   ],
 },
+},
+island:{
+  hero: {
+  subtitle: "Luxury Modular Kitchens",
+
+  title: "Island Kitchen",
+
+  description:
+    "Transform your home with a luxurious island kitchen that combines elegant design, expansive workspace, premium storage, and a central gathering space for family and entertaining.",
+
+  image: kitchenImages.island.hero,
+
+  buttonText: "Get Free Consultation",
+
+  buttonLink: "/contact",
+},
+quickFacts: {
+  tag: "Quick Overview",
+
+  title: "Everything At",
+
+  italicWord: "A Glance",
+
+  facts: [
+    {
+      icon: Home,
+      label: "Best For",
+      value: "Luxury Villas",
+      description: "Perfect for spacious homes and open-plan living.",
+    },
+    {
+      icon: LayoutGrid,
+      label: "Layout Type",
+      value: "Island Kitchen",
+      description: "Central island with surrounding workspace.",
+    },
+    {
+      icon: Ruler,
+      label: "Space Required",
+      value: "180–350 sq.ft",
+      description: "Requires generous floor space.",
+    },
+    {
+      icon: Boxes,
+      label: "Storage",
+      value: "Maximum",
+      description: "Island cabinets add significant storage.",
+    },
+    {
+      icon: Workflow,
+      label: "Lifestyle",
+      value: "Luxury Living",
+      description: "Cooking, dining, and entertaining together.",
+    },
+    {
+      icon: IndianRupee,
+      label: "Starting Price",
+      value: "₹5 Lakhs*",
+      description: "Customized according to layout and finishes.",
+    },
+  ],
+},
+blueprint: {
+  tag: "Kitchen Blueprint",
+
+  title: "Understanding The",
+
+  italicWord: "Layout",
+
+  description:
+    "The island kitchen introduces a multifunctional central workspace while maintaining an efficient work triangle around the sink, hob, and refrigerator.",
+
+  image: kitchenImages.island.blueprint,
+
+  points: [
+    {
+      title: "Central Island Workspace",
+      description:
+        "Provides additional preparation, serving, and dining space.",
+    },
+    {
+      title: "Efficient Work Triangle",
+      description:
+        "The sink, cooktop, and refrigerator remain easily accessible.",
+    },
+    {
+      title: "Perfect for Entertaining",
+      description:
+        "Guests can interact while cooking without interrupting workflow.",
+    },
+    {
+      title: "Additional Storage",
+      description:
+        "The island incorporates deep drawers and hidden cabinets.",
+    },
+  ],
+},
+benefits: {
+  tag: "Benefits",
+
+  title: "Why Homeowners",
+
+  italicWord: "Love It",
+
+  description:
+    "A statement kitchen that combines luxury aesthetics with exceptional functionality.",
+
+  items: [
+    {
+      title: "Luxury Appearance",
+      description:
+        "Creates a premium centerpiece for modern homes.",
+    },
+    {
+      title: "More Counter Space",
+      description:
+        "Ideal for meal preparation and serving.",
+    },
+    {
+      title: "Extra Storage",
+      description:
+        "The island provides additional drawers and cabinets.",
+    },
+    {
+      title: "Perfect for Socializing",
+      description:
+        "Family and guests can gather around the island comfortably.",
+    },
+    {
+      title: "Flexible Seating",
+      description:
+        "Can be designed as a breakfast counter or dining extension.",
+    },
+    {
+      title: "Highly Functional",
+      description:
+        "Supports cooking, dining, working, and entertaining in one space.",
+    },
+  ],
+},
+gallery: {
+  tag: "Featured Projects",
+
+  title: "Luxury",
+
+  italicWord: "Interiors",
+
+  projects: [
+    {
+      title: "Modern White Island Kitchen",
+      location: "Jaipur",
+      image: kitchenImages.island.gallery1,
+    },
+    {
+      title: "Walnut Luxury Island Kitchen",
+      location: "Delhi",
+      image: kitchenImages.island.gallery2,
+    },
+    {
+      title: "Contemporary Black Island Kitchen",
+      location: "Gurugram",
+      image: kitchenImages.island.gallery3,
+    },
+    {
+      title: "Luxury Open-Plan Kitchen",
+      location: "Noida",
+      image: kitchenImages.island.gallery4,
+    },
+  ],
+},
+faq: {
+  tag: "Frequently Asked Questions",
+
+  title: "Everything You Need",
+
+  italicWord: "To Know",
+
+  items: [
+    {
+      question: "How much space is required for an island kitchen?",
+      answer:
+        "An island kitchen works best in medium to large homes where there is enough clearance around the island for comfortable movement. Typically, at least 3–4 feet of circulation space is recommended on all sides.",
+    },
+    {
+      question: "Can an island include a sink or cooktop?",
+      answer:
+        "Yes. Depending on the design, the island can accommodate a sink, cooktop, breakfast counter, or additional storage, making it a highly versatile workspace.",
+    },
+    {
+      question: "Is an island kitchen suitable for apartments?",
+      answer:
+        "It depends on the available floor space. Larger apartments with open-plan layouts can comfortably accommodate an island kitchen, while compact apartments may benefit from alternative layouts.",
+    },
+    {
+      question: "What are the advantages of an island kitchen?",
+      answer:
+        "Island kitchens offer additional workspace, enhanced storage, flexible seating, and a social cooking environment, making them ideal for modern lifestyles and entertaining guests.",
+    },
+    {
+      question: "Which materials are recommended for an island kitchen?",
+      answer:
+        "HDHMR, Marine Plywood, BWP-grade plywood, premium quartz countertops, and high-quality hardware ensure durability, moisture resistance, and long-lasting performance.",
+    },
+    {
+      question: "What is the starting cost of an island modular kitchen?",
+      answer:
+        "The overall cost depends on the kitchen size, island dimensions, materials, finishes, appliances, and accessories. Premium island kitchens generally start from around ₹5 lakhs.",
+    },
+  ],
+},
+
 }
 };

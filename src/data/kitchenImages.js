@@ -24,6 +24,12 @@ import uGallery4 from "@/assets/images/layouts/u-shaped/gallery-4.png";
 
 import islandHero from "@/assets/images/layouts/island/hero.jpg";
 import islandIntro from "@/assets/images/layouts/island/intro.jpg";
+import islandBlueprint from "@/assets/images/layouts/island/blueprint.svg"
+import islandGallery1 from "@/assets/images/layouts/island/gallery-1.png";
+import islandGallery2 from "@/assets/images/layouts/island/gallery-2.png";
+import islandGallery3 from "@/assets/images/layouts/island/gallery-3.png";
+import islandGallery4 from "@/assets/images/layouts/island/gallery-4.png";
+
 
 // Parallel
 
@@ -81,6 +87,11 @@ export const kitchenImages = {
   island: {
     hero: islandHero,
     intro: islandIntro,
+    blueprint : islandBlueprint,
+    gallery1: islandGallery1,
+    gallery2: islandGallery2,
+    gallery3: islandGallery3,
+    gallery4: islandGallery4
   },
 
   parallel: {
