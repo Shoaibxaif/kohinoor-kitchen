@@ -10,6 +10,7 @@ import StraightKitchen from "@/pages/StraightKitchen";
 import PeninsulaKitchen from "@/pages/PeninsulaKitchen";
 import ProjectsPage from "@/pages/Projects";
 import AboutPage from "@/pages/About";
+import ContactPage from "@/pages/Contact";
 
 
 function AppRoutes() {
@@ -25,6 +26,7 @@ function AppRoutes() {
       <Route path={ROUTES.PENINSULA_KITCHEN} element={<PeninsulaKitchen />} />
       <Route path={ROUTES.PROJECTS} element={<ProjectsPage />} />
       <Route path={ROUTES.ABOUT} element={<AboutPage />} />
+      <Route path={ROUTES.CONTACT} element={<ContactPage />} />
     </Routes>
   );
 }
