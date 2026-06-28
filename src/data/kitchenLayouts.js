@@ -712,7 +712,57 @@ benefits: {
         "Perfect for families who cook frequently and need efficient space.",
     },
   ],
-},gallery: {
+},
+storage: {
+      tag: "Smart Storage",
+
+      title: "Intelligent",
+
+      italicWord: "Solutions",
+
+      description:
+        "Every Kohinoor kitchen is equipped with premium storage accessories that maximize space, improve organization, and enhance everyday convenience.",
+
+      items: [
+        {
+          title: "Magic Corner",
+          image: kitchenImages.storage.magicCorner,
+          description:
+            "Transform blind corner cabinets into fully accessible storage with smooth pull-out shelves.",
+        },
+        {
+          title: "Tall Pantry Unit",
+          image: kitchenImages.storage.pantry,
+          description:
+            "A spacious vertical pantry that keeps groceries, jars, and dry ingredients neatly organized.",
+        },
+        {
+          title: "Bottle Pull-Out",
+          image: kitchenImages.storage.bottlePullout,
+          description:
+            "Store oils, spices, sauces, and condiments in a slim pull-out unit for quick access.",
+        },
+        {
+          title: "Cutlery Organizer",
+          image: kitchenImages.storage.cutlery,
+          description:
+            "Custom drawer organizers keep cutlery and kitchen tools neatly arranged.",
+        },
+        {
+          title: "Soft Close Drawers",
+          image: kitchenImages.storage.softClose,
+          description:
+            "Premium soft-close channels ensure silent, smooth, and long-lasting drawer operation.",
+        },
+        {
+          title: "Carousel Corner Unit",
+          image: kitchenImages.storage.carousel,
+          description:
+            "Rotating shelves provide effortless access to cookware stored deep inside corner cabinets.",
+        },
+      ],
+    },
+gallery: {
   tag: "Featured Projects",
 
   title: "Elegant",
@@ -921,6 +971,55 @@ benefits: {
     },
   ],
 },
+storage: {
+      tag: "Smart Storage",
+
+      title: "Intelligent",
+
+      italicWord: "Solutions",
+
+      description:
+        "Every Kohinoor kitchen is equipped with premium storage accessories that maximize space, improve organization, and enhance everyday convenience.",
+
+      items: [
+        {
+          title: "Magic Corner",
+          image: kitchenImages.storage.magicCorner,
+          description:
+            "Transform blind corner cabinets into fully accessible storage with smooth pull-out shelves.",
+        },
+        {
+          title: "Tall Pantry Unit",
+          image: kitchenImages.storage.pantry,
+          description:
+            "A spacious vertical pantry that keeps groceries, jars, and dry ingredients neatly organized.",
+        },
+        {
+          title: "Bottle Pull-Out",
+          image: kitchenImages.storage.bottlePullout,
+          description:
+            "Store oils, spices, sauces, and condiments in a slim pull-out unit for quick access.",
+        },
+        {
+          title: "Cutlery Organizer",
+          image: kitchenImages.storage.cutlery,
+          description:
+            "Custom drawer organizers keep cutlery and kitchen tools neatly arranged.",
+        },
+        {
+          title: "Soft Close Drawers",
+          image: kitchenImages.storage.softClose,
+          description:
+            "Premium soft-close channels ensure silent, smooth, and long-lasting drawer operation.",
+        },
+        {
+          title: "Carousel Corner Unit",
+          image: kitchenImages.storage.carousel,
+          description:
+            "Rotating shelves provide effortless access to cookware stored deep inside corner cabinets.",
+        },
+      ],
+    },
 gallery: {
   tag: "Featured Projects",
 
@@ -992,5 +1091,263 @@ faq: {
   ],
 },
 
+},
+straight: {
+  hero: {
+  subtitle: "Luxury Modular Kitchens",
+
+  title: "Straight Kitchen",
+
+  description:
+    "A sleek and space-efficient straight modular kitchen designed for apartments, studios, and modern homes, offering smart storage and a streamlined cooking experience.",
+
+  image: kitchenImages.straight.hero,
+
+  buttonText: "Get Free Consultation",
+
+  buttonLink: "/contact",
+},
+quickFacts: {
+  tag: "Quick Overview",
+
+  title: "Everything At",
+
+  italicWord: "A Glance",
+
+  facts: [
+    {
+      icon: Home,
+      label: "Best For",
+      value: "Apartments & Studios",
+      description: "Ideal for compact homes and urban living.",
+    },
+    {
+      icon: LayoutGrid,
+      label: "Layout Type",
+      value: "Straight",
+      description: "Single-wall modular kitchen.",
+    },
+    {
+      icon: Ruler,
+      label: "Space Required",
+      value: "50–100 sq.ft",
+      description: "Perfect for narrow layouts.",
+    },
+    {
+      icon: Boxes,
+      label: "Storage",
+      value: "Moderate",
+      description: "Optimized vertical storage solutions.",
+    },
+    {
+      icon: Workflow,
+      label: "Workflow",
+      value: "Simple",
+      description: "Everything within a single linear workspace.",
+    },
+    {
+      icon: IndianRupee,
+      label: "Starting Price",
+      value: "₹1.8 Lakhs*",
+      description: "Customized according to materials and finishes.",
+    },
+  ],
+},blueprint: {
+  tag: "Kitchen Blueprint",
+
+  title: "Understanding The",
+
+  italicWord: "Layout",
+
+  description:
+    "A straight kitchen arranges all cabinets, appliances, and workstations along a single wall, creating a clean, efficient, and space-saving cooking environment.",
+
+  image: kitchenImages.straight.blueprint,
+
+  points: [
+    {
+      title: "Single Wall Layout",
+      description:
+        "All kitchen elements are aligned on one wall for maximum space efficiency.",
+    },
+    {
+      title: "Easy Workflow",
+      description:
+        "Cooking, preparation, and cleaning zones are organized in a continuous sequence.",
+    },
+    {
+      title: "Smart Vertical Storage",
+      description:
+        "Wall cabinets and tall units maximize storage without occupying additional floor space.",
+    },
+    {
+      title: "Ideal for Compact Homes",
+      description:
+        "A practical solution for apartments, studios, and open-plan living spaces.",
+    },
+  ],
+},
+storage: {
+      tag: "Smart Storage",
+
+      title: "Intelligent",
+
+      italicWord: "Solutions",
+
+      description:
+        "Every Kohinoor kitchen is equipped with premium storage accessories that maximize space, improve organization, and enhance everyday convenience.",
+
+      items: [
+        {
+          title: "Magic Corner",
+          image: kitchenImages.storage.magicCorner,
+          description:
+            "Transform blind corner cabinets into fully accessible storage with smooth pull-out shelves.",
+        },
+        {
+          title: "Tall Pantry Unit",
+          image: kitchenImages.storage.pantry,
+          description:
+            "A spacious vertical pantry that keeps groceries, jars, and dry ingredients neatly organized.",
+        },
+        {
+          title: "Bottle Pull-Out",
+          image: kitchenImages.storage.bottlePullout,
+          description:
+            "Store oils, spices, sauces, and condiments in a slim pull-out unit for quick access.",
+        },
+        {
+          title: "Cutlery Organizer",
+          image: kitchenImages.storage.cutlery,
+          description:
+            "Custom drawer organizers keep cutlery and kitchen tools neatly arranged.",
+        },
+        {
+          title: "Soft Close Drawers",
+          image: kitchenImages.storage.softClose,
+          description:
+            "Premium soft-close channels ensure silent, smooth, and long-lasting drawer operation.",
+        },
+        {
+          title: "Carousel Corner Unit",
+          image: kitchenImages.storage.carousel,
+          description:
+            "Rotating shelves provide effortless access to cookware stored deep inside corner cabinets.",
+        },
+      ],
+    },
+benefits: {
+  tag: "Benefits",
+
+  title: "Why Homeowners",
+
+  italicWord: "Love It",
+
+  description:
+    "A clean, practical kitchen layout that makes the most of limited space without compromising functionality.",
+
+  items: [
+    {
+      title: "Space Saving",
+      description:
+        "Perfect for compact homes where every square foot matters.",
+    },
+    {
+      title: "Simple Workflow",
+      description:
+        "Everything is positioned within easy reach along one wall.",
+    },
+    {
+      title: "Modern Appearance",
+      description:
+        "Creates a sleek, uncluttered look that complements contemporary interiors.",
+    },
+    {
+      title: "Affordable",
+      description:
+        "Requires fewer cabinets and countertops than larger layouts.",
+    },
+    {
+      title: "Easy Maintenance",
+      description:
+        "A linear layout makes cleaning and maintenance quick and convenient.",
+    },
+    {
+      title: "Open Living",
+      description:
+        "Blends seamlessly with dining and living spaces in open-plan homes.",
+    },
+  ],
+},
+gallery: {
+  tag: "Featured Projects",
+
+  title: "Elegant",
+
+  italicWord: "Designs",
+
+  projects: [
+    {
+      title: "Modern White Straight Kitchen",
+      location: "Jaipur",
+      image: kitchenImages.straight.gallery1,
+    },
+    {
+      title: "Premium Wooden Straight Kitchen",
+      location: "Delhi",
+      image: kitchenImages.straight.gallery2,
+    },
+    {
+      title: "Minimal Grey Straight Kitchen",
+      location: "Gurugram",
+      image: kitchenImages.straight.gallery3,
+    },
+    {
+      title: "Luxury Compact Kitchen",
+      location: "Noida",
+      image: kitchenImages.straight.gallery4,
+    },
+  ],
+},
+faq: {
+  tag: "Frequently Asked Questions",
+
+  title: "Everything You Need",
+
+  italicWord: "To Know",
+
+  items: [
+    {
+      question: "Is a straight kitchen suitable for small homes?",
+      answer:
+        "Yes. A straight kitchen is specifically designed for compact homes, apartments, and studio spaces, offering an efficient layout without occupying excessive floor area.",
+    },
+    {
+      question: "Can a straight kitchen provide sufficient storage?",
+      answer:
+        "Absolutely. Tall pantry units, wall cabinets, and smart storage accessories help maximize vertical storage while keeping the kitchen organized.",
+    },
+    {
+      question: "What are the advantages of a straight modular kitchen?",
+      answer:
+        "Straight kitchens are space-efficient, cost-effective, easy to maintain, and blend seamlessly into modern open-plan living spaces.",
+    },
+    {
+      question: "Which materials are recommended for a straight modular kitchen?",
+      answer:
+        "HDHMR, Marine Plywood, and BWP-grade plywood combined with premium hardware ensure long-lasting durability and moisture resistance.",
+    },
+    {
+      question: "Can a straight kitchen include premium accessories?",
+      answer:
+        "Yes. Features like bottle pull-outs, cutlery organizers, soft-close drawers, tall pantry units, and pull-out baskets can all be incorporated depending on the available space.",
+    },
+    {
+      question: "What is the starting cost of a straight modular kitchen?",
+      answer:
+        "The cost depends on the kitchen size, materials, finishes, hardware, and accessories. A premium straight modular kitchen generally starts from around ₹1.8 lakhs.",
+    },
+  ],
+},
 }
 };

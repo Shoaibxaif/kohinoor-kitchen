@@ -6,6 +6,7 @@ import LShapedKitchen from "@/pages/LShapedKitchen";
 import UShapedKitchen from "@/pages/UShapedKitchen";
 import ParallelKitchen from "@/pages/ParallelKitchen";
 import IslandKitchen from "@/pages/IslandKitchen";
+import StraightKitchen from "@/pages/StraightKitchen";
 
 
 function AppRoutes() {
@@ -17,6 +18,7 @@ function AppRoutes() {
       <Route path={ROUTES.U_SHAPED_KITCHEN} element={<UShapedKitchen />} />
       <Route path={ROUTES.PARALLEL_KITCHEN} element={<ParallelKitchen />} />
       <Route path={ROUTES.ISLAND_KITCHEN} element={<IslandKitchen />} />
+      <Route path={ROUTES.STRAIGHT_KITCHEN} element={<StraightKitchen />} />
     </Routes>
   );
 }
