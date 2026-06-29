@@ -4,6 +4,12 @@ import Container from "@/components/common/Container";
 import { ROUTES } from "@/constants/routes";
 import { SITE } from "@/constants/siteConfig";
 
+import {
+    Phone,
+    Mail,
+    MapPin,
+} from "lucide-react";
+
 const links = [
     {
         label: "Home",
@@ -11,11 +17,11 @@ const links = [
     },
     {
         label: "Kitchens",
-        path: ROUTES.KITCHENS,
+        path: ROUTES.MODULAR_KITCHEN,
     },
     {
         label: "Projects",
-        path: ROUTES.GALLERY,
+        path: ROUTES.PROJECTS,
     },
     {
         label: "About",
@@ -27,10 +33,33 @@ const links = [
     },
 ];
 
-function Footer() {
-    return (<footer className="bg-[#f7f5f0] border-t border-[#e8e4dc]"> <Container> <div className="py-20">
+const services = [
+    {
+        label: "Modular Kitchens",
+        path: ROUTES.MODULAR_KITCHEN,
+    },
+    {
+        label: "Wardrobe",
+        path: ROUTES.HOME,
+    },
+    {
+        label: "Bed",
+        path: ROUTES.HOME,
+    },
+    {
+        label: "Sofa",
+        path: ROUTES.HOME,
+    },
+    {
+        label: "TV Panel",
+        path: ROUTES.HOME,
+    },
+];
 
-        <div className="grid lg:grid-cols-[2fr_1fr_1fr] gap-16">
+function Footer() {
+    return (<footer className="bg-[#f7f5f0] border-t border-[#e8e4dc]"> <Container> <div className="py-24">
+
+        <div className="grid gap-16 lg:grid-cols-[2fr_1fr_1fr_1fr]">
 
             {/* Brand */}
             <div>
@@ -43,21 +72,22 @@ function Footer() {
                     KOHINOOR
                 </h2>
 
+                <div className="mt-5 h-px w-20 bg-[#C8A97A]" />
+
                 <p
                     className="
               mt-6
-              max-w-md
+              max-w-lg
               text-[#6b6b66]
               leading-8
             "
                 >
-                    Crafting premium modular kitchens for modern homes
-                    across Delhi NCR with thoughtful design, premium
-                    materials, and expert craftsmanship.
+                    Kohinoor Modular Kitchen is a trusted modular kitchen manufacturer in Delhi with over 20 years of experience. We design and build premium modular kitchens featuring smart storage, quality materials, and expert craftsmanship for modern homes.
+
                 </p>
             </div>
 
-            {/* Navigation */}
+            {/* Company */}
             <div>
                 <h3
                     className="
@@ -68,7 +98,7 @@ function Footer() {
               mb-6
             "
                 >
-                    Navigation
+                    Company
                 </h3>
 
                 <ul className="space-y-4">
@@ -77,12 +107,51 @@ function Footer() {
                             <NavLink
                                 to={link.path}
                                 className="
-                    text-[#6b6b66]
-                    hover:text-[#1a1a18]
-                    transition-colors
-                  "
+                                text-[#3f3f3b]
+                                transition-all
+                                duration-300
+                                hover:text-[#C8A97A]
+                                hover:translate-x-1
+                                inline-block
+                                "
                             >
                                 {link.label}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
+            {/* Services */}
+
+            <div>
+                <h3
+                    className="
+      mb-6
+      text-xs
+      uppercase
+      tracking-[0.18em]
+      text-[#c8a97a]
+    "
+                >
+                    Services
+                </h3>
+
+                <ul className="space-y-4">
+                    {services.map((service) => (
+                        <li key={service.label}>
+                            <NavLink
+                                to={service.path}
+                                className="
+                                text-[#3f3f3b]
+                                transition-all
+                                duration-300
+                                hover:text-[#C8A97A]
+                                hover:translate-x-1
+                                inline-block
+                                "
+                            >
+                                {service.label}
                             </NavLink>
                         </li>
                     ))}
@@ -103,14 +172,24 @@ function Footer() {
                     Contact
                 </h3>
 
-                <div className="space-y-4 text-[#6b6b66]">
-                    <p>{SITE.phone}</p>
-                    <p>{SITE.email}</p>
-                    <p>Delhi NCR</p>
+                <div className="space-y-5 text-[#3f3f3b]">
+                    <div className="flex items-start gap-3">
+                        <Phone size={18} className="mt-1 text-[#C8A97A]" />
+                        <span>{SITE.phone}</span>
+                    </div>
 
-                    <div className="pt-4">
-                        <p>Mon – Sat</p>
-                        <p>10:00 AM – 7:00 PM</p>
+                    <div className="flex items-start gap-3">
+                        <Mail size={18} className="mt-1 text-[#C8A97A]" />
+                        <span>{SITE.email}</span>
+                    </div>
+
+                    <div className="flex items-start gap-3">
+                        <MapPin size={18} className="mt-1 flex-shrink-0 text-[#C8A97A]" />
+                        <div>
+                            {SITE.address.map((line) => (
+                                <p key={line}>{line}</p>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,7 +201,7 @@ function Footer() {
           mt-16
           pt-8
           border-t
-          border-[#e8e4dc]
+          border-[#ddd7ce]
           flex
           flex-col
           md:flex-row
@@ -130,19 +209,19 @@ function Footer() {
           gap-4
         "
         >
-            <p className="text-[#9a9a92] text-sm">
+            <p className="text-[#7a7a73] text-sm">
                 © 2026 Kohinoor Kitchens. All rights reserved.
             </p>
 
-            <p className="text-[#9a9a92] text-sm">
+            <p className="text-[#7a7a73] text-sm">
                 Designed by{" "}
                 <a
                     href="https://www.linkedin.com/in/mohammad-shoaib-0a8298223/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="
-      text-[#6b6b66]
-      hover:text-[#1a1a18]
+     text-[#3f3f3b]
+hover:text-[#C8A97A]
       underline-offset-4
       hover:underline
       transition-all
