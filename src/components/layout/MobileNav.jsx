@@ -96,7 +96,7 @@ function MobileNav({ isOpen, setIsOpen }) {
             text-[#4a4a46]
           "
         >
-          Modular Kitchens
+          Solutions
           <ChevronDown
             size={18}
             className={`
