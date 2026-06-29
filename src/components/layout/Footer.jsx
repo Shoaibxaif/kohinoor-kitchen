@@ -54,6 +54,10 @@ const services = [
         label: "TV Panel",
         path: ROUTES.HOME,
     },
+    {
+        label: "Chairs",
+        path: ROUTES.HOME,
+    }
 ];
 
 function Footer() {

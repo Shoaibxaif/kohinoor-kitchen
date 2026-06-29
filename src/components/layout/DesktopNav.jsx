@@ -32,11 +32,10 @@ function DesktopNav() {
               uppercase
               tracking-[0.15em]
               transition-colors
-              ${
-                isActive
-                  ? "text-[#1a1a18]"
-                  : "text-[#4a4a46] hover:text-[#1a1a18]"
-              }
+              ${isActive
+              ? "text-[#1a1a18]"
+              : "text-[#4a4a46] hover:text-[#1a1a18]"
+            }
             `
           }
         >
@@ -59,7 +58,7 @@ function DesktopNav() {
             transition-colors
           "
         >
-          Modular Kitchens
+          Solutions
           <ChevronDown
             size={16}
             className="
@@ -84,11 +83,10 @@ function DesktopNav() {
                 uppercase
                 tracking-[0.15em]
                 transition-colors
-                ${
-                  isActive
-                    ? "text-[#1a1a18]"
-                    : "text-[#4a4a46] hover:text-[#1a1a18]"
-                }
+                ${isActive
+                ? "text-[#1a1a18]"
+                : "text-[#4a4a46] hover:text-[#1a1a18]"
+              }
               `
             }
           >
