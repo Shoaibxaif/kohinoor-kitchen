@@ -1,6 +1,7 @@
 import Container from "@/components/common/Container";
 import kitchenImage from "@/assets/images/about-kitchen.jpg";
 import Button from "@/components/common/Button";
+import { ROUTES } from "@/constants/routes";
 
 const features = [
     "Premium Hardware & Accessories",
@@ -112,6 +113,7 @@ function AboutSection() {
                         </ul>
 
                         <Button
+                            to={ROUTES.ABOUT}
                             variant="accent"
                             className="mt-10 w-fit"
 

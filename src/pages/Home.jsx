@@ -2,6 +2,7 @@ import MainLayout from "@/layouts/MainLayout";
 import Hero from "@/components/home/Hero";
 import MarqueeBar from "@/components/home/MarqueeBar";
 import KitchenCategories from "../components/home/KitchenCategories";
+import FurnitureCategories from "../components/home/FurnitureCategories";
 import AboutSection from "@/components/home/AboutSection";
 import FeaturedProjects from "@/components/home/FeaturedProjects";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
@@ -16,6 +17,7 @@ function Home() {
             <Hero />
             <MarqueeBar />
             <KitchenCategories />
+            <FurnitureCategories />
             <AboutSection />
             <FeaturedProjects />
             <WhyChooseUs />

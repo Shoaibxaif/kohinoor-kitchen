@@ -1,6 +1,13 @@
 import SectionHeading from "@/components/common/SectionHeading";
 import Container from "@/components/common/Container";
-import img1 from "@/assets/images/kitchens/kitchen-1.jpg";
+import img1 from "@/assets/images/layouts/l-shaped/gallery-1.jpg";
+import img2 from "@/assets/images/layouts/u-shaped/gallery-1.png";
+import img3 from "@/assets/images/layouts/parallel/gallery-1.png";
+import img4 from "@/assets/images/layouts/island/gallery-1.png";
+import img5 from "@/assets/images/layouts/peninsula/gallery-1.png";
+import img6 from "@/assets/images/layouts/straight/gallery-1.png";
+
+
 
 const kitchens = [
     {
@@ -9,23 +16,23 @@ const kitchens = [
     },
     {
         title: "U-Shaped Kitchen",
-        image: img1,
+        image: img2,
     },
     {
         title: "Parallel Kitchen",
-        image: img1,
+        image: img3,
     },
     {
         title: "Island Kitchen",
-        image: img1,
+        image: img4,
     },
     {
-        title: "Open Kitchen",
-        image: img1,
+        title: "Peninsula Kitchen",
+        image: img5,
     },
     {
         title: "Straight Kitchen",
-        image: img1,
+        image: img6,
     },
 ];
 

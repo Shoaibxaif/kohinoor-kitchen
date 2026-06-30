@@ -59,6 +59,10 @@ const services = [
     label: "Chairs",
     path: "#",
   },
+  {
+    label: "Dining Tables",
+    path: "#",
+  },
 ];
 
 function MegaMenu() {

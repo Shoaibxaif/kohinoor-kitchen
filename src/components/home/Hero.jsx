@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 
 import Container from "@/components/common/Container";
 import Button from "@/components/common/Button";
-
+import { ROUTES } from "@/constants/routes";
 import heroImage from "@/assets/images/hero-kitchen.jpg";
 
 const stats = [
   {
-    value: "500+",
+    value: "1500+",
     label: "Projects Delivered",
   },
   {
@@ -23,7 +23,7 @@ const stats = [
 
 function Hero() {
   return (
-    <section className="py-16 lg:py-24 overflow-hidden">
+    <section className="py-16 lg:py-20 overflow-hidden">
       <Container>
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -34,7 +34,7 @@ function Hero() {
             transition={{ duration: 0.7 }}
           >
             <p className="text-xs uppercase tracking-[0.25em] text-[#c8a97a] mb-6">
-              Luxury Modular Kitchens
+              Luxury Modular Kitchens & Furniture
             </p>
 
             <h1
@@ -47,9 +47,7 @@ function Hero() {
             </h1>
 
             <p className="mt-8 text-lg text-[#4a4a46] max-w-xl leading-relaxed">
-              Bespoke modular kitchens designed with premium materials,
-              thoughtful functionality, and timeless aesthetics for modern
-              Delhi homes.
+              Designing and manufacturing premium modular kitchens, wardrobes, TV panels, beds, sofas, and custom furniture for modern homes across Delhi NCR.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
@@ -57,18 +55,21 @@ function Hero() {
                 Get Free Consultation
               </Button>
 
-              <button
+              <Button
+                to={ROUTES.PROJECTS}
                 className="
-                  flex items-center gap-2
-                  text-[#1a1a18]
-                  uppercase
-                  tracking-[0.15em]
-                  text-sm
-                "
+    gap-2
+    bg-transparent
+    text-[#1a1a18]
+    hover:bg-transparent
+    hover:text-[#C8A97A]
+    px-0
+    py-0
+  "
               >
                 View Projects
                 <ArrowRight size={16} />
-              </button>
+              </Button>
             </div>
 
             <div className="grid grid-cols-3 gap-6 mt-16 pt-8 border-t border-[#e8e4dc]">

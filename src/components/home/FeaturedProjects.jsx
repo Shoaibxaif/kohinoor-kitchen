@@ -2,8 +2,13 @@ import { ArrowRight } from "lucide-react";
 
 import Container from "@/components/common/Container";
 import SectionHeading from "@/components/common/SectionHeading";
+import Button from "@/components/common/Button";
+import { ROUTES } from "@/constants/routes";
+import { Link } from "react-router-dom";
+import project1 from "@/assets/images/layouts/l-shaped/gallery-2.jpg";
+import project2 from "@/assets/images/layouts/island/gallery-2.png";
+import project3 from "@/assets/images/layouts/parallel/gallery-2.png";
 
-import project1 from "@/assets/images/projects/project-1.jpg";
 
 const projects = [
     {
@@ -11,18 +16,21 @@ const projects = [
         location: "South Delhi",
         type: "L-Shaped Kitchen",
         image: project1,
+        path: ROUTES.L_SHAPED_KITCHEN,
     },
     {
         title: "Luxury Apartment",
         location: "Gurgaon",
         type: "Island Kitchen",
-        image: project1,
+        image: project2,
+        path: ROUTES.ISLAND_KITCHEN,
     },
     {
         title: "Modern Family Home",
         location: "Noida",
         type: "Parallel Kitchen",
-        image: project1,
+        image: project3,
+        path: ROUTES.PARALLEL_KITCHEN,
     },
 ];
 
@@ -38,33 +46,31 @@ function FeaturedProjects() {
                         italicWord="Crafted"
                     />
 
-                    <button
-                        className="
-              flex items-center gap-2
-              text-sm
-              uppercase
-              tracking-[0.15em]
-              text-[#1a1a18]
-            "
+                    <Button
+                        to={ROUTES.PROJECTS}
+                        variant="link"
+                        className="gap-2"
                     >
                         View All Projects
                         <ArrowRight size={16} />
-                    </button>
+                    </Button>
                 </div>
 
                 {/* Projects */}
                 <div className="grid lg:grid-cols-3 gap-8 mt-16">
                     {projects.map((project) => (
-                        <article
+                        <Link
                             key={project.title}
-                            className="group cursor-pointer"
+                            to={project.path}
+                            className="group block"
                         >
-                            {/* Image */}
-                            <div className="overflow-hidden">
-                                <img
-                                    src={project.image}
-                                    alt={project.title}
-                                    className="
+                            <article className="cursor-pointer">
+                                {/* Image */}
+                                <div className="overflow-hidden">
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="
                     w-full
                     h-[450px]
                     object-cover
@@ -72,51 +78,54 @@ function FeaturedProjects() {
                     duration-700
                     group-hover:scale-105
                   "
-                                />
-                            </div>
+                                    />
+                                </div>
 
-                            {/* Content */}
-                            <div className="pt-6">
-                                <p
-                                    className="
+                                {/* Content */}
+
+                                {/* Content */}
+                                <div className="pt-6">
+                                    <p
+                                        className="
                     text-xs
                     uppercase
                     tracking-[0.18em]
                     text-[#c8a97a]
                   "
-                                >
-                                    {project.location}
-                                </p>
+                                    >
+                                        {project.location}
+                                    </p>
 
-                                <h3
-                                    className="
+                                    <h3
+                                        className="
                     mt-3
                     text-2xl
                     text-[#1a1a18]
                   "
-                                    style={{
-                                        fontFamily: "Playfair Display",
-                                    }}
-                                >
-                                    {project.title}
-                                </h3>
+                                        style={{
+                                            fontFamily: "Playfair Display",
+                                        }}
+                                    >
+                                        {project.title}
+                                    </h3>
 
-                                <div className="flex items-center justify-between mt-5">
-                                    <span className="text-[#4a4a46]">
-                                        {project.type}
-                                    </span>
+                                    <div className="flex items-center justify-between mt-5">
+                                        <span className="text-[#4a4a46]">
+                                            {project.type}
+                                        </span>
 
-                                    <ArrowRight
-                                        size={18}
-                                        className="
+                                        <ArrowRight
+                                            size={18}
+                                            className="
                       transition-transform
                       duration-300
                       group-hover:translate-x-1
                     "
-                                    />
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
+                            </article>
+                        </Link>
                     ))}
                 </div>
             </Container>

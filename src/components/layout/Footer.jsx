@@ -57,6 +57,10 @@ const services = [
     {
         label: "Chairs",
         path: ROUTES.HOME,
+    },
+    {
+        label: "Dining Tables",
+        path: ROUTES.HOME,
     }
 ];
 

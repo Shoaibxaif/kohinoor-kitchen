@@ -1,10 +1,12 @@
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 const Button = ({
     children,
     variant = "primary",
     className = "",
     href,
+    to,
     ...props
 }) => {
     const classes = clsx(
@@ -33,14 +35,22 @@ const Button = ({
 
         variant === "accent" &&
         `
-        bg-[#C8A97A]
-        text-white
-        border
-        border-[#C8A97A]
-        hover:bg-white
-        hover:text-[#C8A97A]
-        hover:border-[#C8A97A]
-        `,
+      bg-[#C8A97A]
+      text-white
+      border
+      border-[#C8A97A]
+      hover:bg-white
+      hover:text-[#C8A97A]
+      hover:border-[#C8A97A]
+      `,
+        variant === "link" &&
+        `
+    bg-transparent
+    p-0
+    text-[#1a1a18]
+    hover:text-[#C8A97A]
+    hover:bg-transparent
+    `,
 
         variant === "outline-light" &&
         "border border-white/20 text-white hover:bg-white hover:text-[#1a1a18]",
@@ -48,6 +58,16 @@ const Button = ({
         className
     );
 
+    // Internal React Router navigation
+    if (to) {
+        return (
+            <Link to={to} className={classes} {...props}>
+                {children}
+            </Link>
+        );
+    }
+
+    // External link
     if (href) {
         return (
             <a href={href} className={classes} {...props}>
@@ -56,6 +76,7 @@ const Button = ({
         );
     }
 
+    // Default button
     return (
         <button className={classes} {...props}>
             {children}
