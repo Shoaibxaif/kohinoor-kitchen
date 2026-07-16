@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ROUTES } from "@/constants/routes";
 
 function ProjectCard({
   image,
@@ -7,7 +8,6 @@ function ProjectCard({
   location,
   layout,
   area,
-  slug,
 }) {
   return (
     <article className="group overflow-hidden bg-white">
@@ -17,6 +17,7 @@ function ProjectCard({
           src={image}
           alt={title}
           loading="lazy"
+          decoding="async"
           className="
             h-[420px]
             w-full
@@ -114,7 +115,7 @@ function ProjectCard({
           </span>
 
           <Link
-            to={`/projects/${slug}`}
+            to={ROUTES.CONTACT}
             className="
               text-sm
               uppercase
@@ -124,7 +125,7 @@ function ProjectCard({
               transition-colors
             "
           >
-            View Project
+            Discuss a Similar Project
           </Link>
         </div>
       </div>

@@ -15,6 +15,8 @@ function PageHero({
             <img
                 src={image}
                 alt={title}
+                fetchPriority="high"
+                decoding="async"
                 className="absolute inset-0 h-full w-full object-cover"
             />
 

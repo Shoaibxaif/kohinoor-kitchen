@@ -1,9 +1,9 @@
 import { lazy, Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Navigate, Routes, Route } from "react-router-dom";
 
 import { ROUTES } from "@/constants/routes";
 
-import Home from "@/pages/Home";
+const Home = lazy(() => import("@/pages/Home"));
 const ModularKitchen = lazy(() => import("@/pages/ModularKitchen"));
 const LShapedKitchen = lazy(() => import("@/pages/LShapedKitchen"));
 const UShapedKitchen = lazy(() => import("@/pages/UShapedKitchen"));
@@ -103,6 +103,7 @@ function AppRoutes() {
           path={ROUTES.DINING_FURNITURE}
           element={<DiningFurniture />}
         />
+        <Route path="*" element={<Navigate to={ROUTES.HOME} replace />} />
       </Routes>
     </Suspense>
   );

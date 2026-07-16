@@ -101,6 +101,8 @@ function Hero() {
               <img
                 src={heroImage}
                 alt="Luxury Modular Kitchen"
+                fetchPriority="high"
+                decoding="async"
                 className="
                   w-full
                   h-[500px]

@@ -43,6 +43,7 @@ function Navbar() {
               onClick={() => setIsOpen(!isOpen)}
               className="lg:hidden text-[#1a1a18]"
               aria-label="Toggle Navigation"
+              aria-expanded={isOpen}
             >
               {isOpen ? <X size={26} /> : <Menu size={26} />}
             </button>

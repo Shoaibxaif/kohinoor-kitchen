@@ -214,7 +214,7 @@ function Footer() {
         "
         >
             <p className="text-[#7a7a73] text-sm">
-                © 2026 Kohinoor Kitchens. All rights reserved.
+                © {new Date().getFullYear()} Kohinoor Kitchens. All rights reserved.
             </p>
 
             <p className="text-[#7a7a73] text-sm">

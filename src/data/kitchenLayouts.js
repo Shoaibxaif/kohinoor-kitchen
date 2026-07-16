@@ -713,55 +713,6 @@ benefits: {
     },
   ],
 },
-storage: {
-      tag: "Smart Storage",
-
-      title: "Intelligent",
-
-      italicWord: "Solutions",
-
-      description:
-        "Every Kohinoor kitchen is equipped with premium storage accessories that maximize space, improve organization, and enhance everyday convenience.",
-
-      items: [
-        {
-          title: "Magic Corner",
-          image: kitchenImages.storage.magicCorner,
-          description:
-            "Transform blind corner cabinets into fully accessible storage with smooth pull-out shelves.",
-        },
-        {
-          title: "Tall Pantry Unit",
-          image: kitchenImages.storage.pantry,
-          description:
-            "A spacious vertical pantry that keeps groceries, jars, and dry ingredients neatly organized.",
-        },
-        {
-          title: "Bottle Pull-Out",
-          image: kitchenImages.storage.bottlePullout,
-          description:
-            "Store oils, spices, sauces, and condiments in a slim pull-out unit for quick access.",
-        },
-        {
-          title: "Cutlery Organizer",
-          image: kitchenImages.storage.cutlery,
-          description:
-            "Custom drawer organizers keep cutlery and kitchen tools neatly arranged.",
-        },
-        {
-          title: "Soft Close Drawers",
-          image: kitchenImages.storage.softClose,
-          description:
-            "Premium soft-close channels ensure silent, smooth, and long-lasting drawer operation.",
-        },
-        {
-          title: "Carousel Corner Unit",
-          image: kitchenImages.storage.carousel,
-          description:
-            "Rotating shelves provide effortless access to cookware stored deep inside corner cabinets.",
-        },
-      ],
-    },
 gallery: {
   tag: "Featured Projects",
 

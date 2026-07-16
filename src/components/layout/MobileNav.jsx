@@ -36,6 +36,33 @@ const kitchenLinks = [
   },
 ];
 
+const serviceLinks = [
+  {
+    label: "Modular Kitchens",
+    path: ROUTES.MODULAR_KITCHEN,
+  },
+  {
+    label: "Wardrobes",
+    path: ROUTES.WARDROBES,
+  },
+  {
+    label: "Beds",
+    path: ROUTES.BEDS,
+  },
+  {
+    label: "Sofas",
+    path: ROUTES.SOFAS,
+  },
+  {
+    label: "TV Panels",
+    path: ROUTES.TV_PANELS,
+  },
+  {
+    label: "Dining Furniture",
+    path: ROUTES.DINING_FURNITURE,
+  },
+];
+
 const navLinks = [
   {
     label: "Projects",
@@ -53,6 +80,7 @@ const navLinks = [
 
 function MobileNav({ isOpen, setIsOpen }) {
   const [openKitchen, setOpenKitchen] = useState(false);
+  const [openServices, setOpenServices] = useState(false);
 
   if (!isOpen) return null;
 
@@ -95,6 +123,7 @@ function MobileNav({ isOpen, setIsOpen }) {
             text-sm
             text-[#4a4a46]
           "
+          aria-expanded={openKitchen}
         >
           Solutions
           <ChevronDown
@@ -117,6 +146,64 @@ function MobileNav({ isOpen, setIsOpen }) {
         >
           <div className="pl-10 pb-2">
             {kitchenLinks.map((item) => (
+              <NavLink
+                key={item.path}
+                to={item.path}
+                onClick={() => setIsOpen(false)}
+                className={({ isActive }) =>
+                  `
+                    block
+                    py-3
+                    text-sm
+                    ${isActive ? "text-[#1a1a18]" : "text-[#6b6b66]"}
+                  `
+                }
+              >
+                {item.label}
+              </NavLink>
+            ))}
+          </div>
+        </div>
+
+        {/* Services Accordion */}
+
+        <button
+          onClick={() => setOpenServices(!openServices)}
+          className="
+            w-full
+            flex
+            justify-between
+            items-center
+            px-6
+            py-4
+            uppercase
+            tracking-[0.15em]
+            text-sm
+            text-[#4a4a46]
+          "
+          aria-expanded={openServices}
+        >
+          Services
+          <ChevronDown
+            size={18}
+            className={`
+              transition-transform
+              duration-300
+              ${openServices ? "rotate-180" : ""}
+            `}
+          />
+        </button>
+
+        <div
+          className={`
+            overflow-hidden
+            transition-all
+            duration-300
+            ${openServices ? "max-h-[500px]" : "max-h-0"}
+          `}
+        >
+          <div className="pl-10 pb-2">
+            {serviceLinks.map((item) => (
               <NavLink
                 key={item.path}
                 to={item.path}
