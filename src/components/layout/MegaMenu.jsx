@@ -41,28 +41,25 @@ const services = [
   },
   {
     label: "Wardrobes",
-    path: "#",
+    path: ROUTES.WARDROBES,
   },
   {
     label: "Beds",
-    path: "#",
+    path: ROUTES.BEDS,
   },
   {
     label: "Sofas",
-    path: "#",
+    path: ROUTES.SOFAS,
   },
   {
     label: "TV Panels",
-    path: "#",
+    path: ROUTES.TV_PANELS,
   },
   {
-    label: "Chairs",
-    path: "#",
-  },
-  {
-    label: "Dining Tables",
-    path: "#",
-  },
+    label: "Dining Furniture",
+    path: ROUTES.DINING_FURNITURE
+
+  }
 ];
 
 function MegaMenu() {

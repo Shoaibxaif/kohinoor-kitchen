@@ -2,13 +2,13 @@ import MainLayout from "@/layouts/MainLayout";
 
 import { kitchenLayouts } from "@/data/kitchenLayouts";
 
-import LayoutHero from "@/components/kitchen-layout/LayoutHero";
-import QuickFacts from "@/components/kitchen-layout/QuickFacts";
-import KitchenBlueprint from "@/components/kitchen-layout/KitchenBlueprint";
-import FeatureGrid from "@/components/kitchen-layout/FeatureGrid";
-import StorageSolutions from "@/components/kitchen-layout/StorageSolutions";
-import GallerySection from "@/components/kitchen-layout/GallerySection";
-import FAQSection from "@/components/kitchen-layout/FAQSection";
+import LayoutHero from "@/components/page-layout/LayoutHero";
+import QuickFacts from "@/components/page-layout/QuickFacts";
+import KitchenBlueprint from "@/components/page-layout/KitchenBlueprint";
+import FeatureGrid from "@/components/page-layout/FeatureGrid";
+import StorageSolutions from "@/components/page-layout/StorageSolutions";
+import GallerySection from "@/components/page-layout/GallerySection";
+import FAQSection from "@/components/page-layout/FAQSection";
 
 import CTA from "@/components/Home/CTASection";
 

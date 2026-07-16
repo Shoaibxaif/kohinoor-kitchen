@@ -1,4 +1,4 @@
-import FAQSection from "@/components/kitchen-layout/FAQSection";
+import FAQSection from "@/components/page-layout/FAQSection";
 import { projectFaq } from "@/data/projectFaq";
 
 function ProjectFAQ() {

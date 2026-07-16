@@ -14,6 +14,12 @@ const PeninsulaKitchen = lazy(() => import("@/pages/PeninsulaKitchen"));
 const ProjectsPage = lazy(() => import("@/pages/Projects"));
 const AboutPage = lazy(() => import("@/pages/About"));
 const ContactPage = lazy(() => import("@/pages/Contact"));
+const Wardrobe = lazy(() => import("@/pages/Wardrobe"));
+const Beds = lazy(() => import("@/pages/Bed"));
+const Sofa = lazy(() => import("@/pages/Sofa"));
+const TVPanels = lazy(() => import("@/pages/TVPanel"));
+const DiningFurniture = lazy(() => import("@/pages/DiningFurniture"));
+
 
 import PageLoader from "@/components/common/PageLoader";
 
@@ -71,6 +77,31 @@ function AppRoutes() {
         <Route
           path={ROUTES.CONTACT}
           element={<ContactPage />}
+        />
+
+        <Route
+          path={ROUTES.WARDROBES}
+          element={<Wardrobe />}
+        />
+
+        <Route
+          path={ROUTES.BEDS}
+          element={<Beds />}
+        />
+
+        <Route
+          path={ROUTES.SOFAS}
+          element={<Sofa />}
+        />
+
+        <Route
+          path={ROUTES.TV_PANELS}
+          element={<TVPanels />}
+        />
+
+        <Route
+          path={ROUTES.DINING_FURNITURE}
+          element={<DiningFurniture />}
         />
       </Routes>
     </Suspense>

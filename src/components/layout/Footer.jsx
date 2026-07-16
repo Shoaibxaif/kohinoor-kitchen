@@ -40,27 +40,23 @@ const services = [
     },
     {
         label: "Wardrobe",
-        path: ROUTES.HOME,
+        path: ROUTES.WARDROBES,
     },
     {
         label: "Bed",
-        path: ROUTES.HOME,
+        path: ROUTES.BEDS,
     },
     {
         label: "Sofa",
-        path: ROUTES.HOME,
+        path: ROUTES.SOFAS,
     },
     {
         label: "TV Panel",
-        path: ROUTES.HOME,
+        path: ROUTES.TV_PANELS,
     },
     {
-        label: "Chairs",
-        path: ROUTES.HOME,
-    },
-    {
-        label: "Dining Tables",
-        path: ROUTES.HOME,
+        label: "Dining Furniture",
+        path: ROUTES.DINING_FURNITURE,
     }
 ];
 

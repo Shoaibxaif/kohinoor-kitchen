@@ -20,4 +20,18 @@ export const ROUTES = {
   CONTACT: "/contact",
 
   PROJECTS: "/projects",
+
+  WARDROBES: "/wardrobes",
+
+  BEDS: "/beds",
+
+  SOFAS: "/sofas",
+
+  TV_PANELS: "/tv-panels",
+
+  CHAIRS: "/chairs",
+
+  DINING_TABLES: "/dining-tables",
+
+  DINING_FURNITURE: "/dining-furniture",
 };
