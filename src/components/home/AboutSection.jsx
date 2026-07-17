@@ -21,6 +21,8 @@ function AboutSection() {
                         <img
                             src={kitchenImage}
                             alt="Luxury Modular Kitchen"
+                            loading="lazy"
+                            decoding="async"
                             className="
                 w-full
                 h-full

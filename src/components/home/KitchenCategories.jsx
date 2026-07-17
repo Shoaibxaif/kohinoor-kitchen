@@ -6,6 +6,8 @@ import img3 from "@/assets/images/layouts/parallel/gallery-1.png";
 import img4 from "@/assets/images/layouts/island/gallery-1.png";
 import img5 from "@/assets/images/layouts/peninsula/gallery-1.png";
 import img6 from "@/assets/images/layouts/straight/gallery-1.png";
+import { Link } from "react-router-dom";
+import { ROUTES } from "@/constants/routes";
 
 
 
@@ -13,26 +15,32 @@ const kitchens = [
     {
         title: "L-Shaped Kitchen",
         image: img1,
+        path: ROUTES.L_SHAPED_KITCHEN,
     },
     {
         title: "U-Shaped Kitchen",
         image: img2,
+        path: ROUTES.U_SHAPED_KITCHEN,
     },
     {
         title: "Parallel Kitchen",
         image: img3,
+        path: ROUTES.PARALLEL_KITCHEN,
     },
     {
         title: "Island Kitchen",
         image: img4,
+        path: ROUTES.ISLAND_KITCHEN,
     },
     {
         title: "Peninsula Kitchen",
         image: img5,
+        path: ROUTES.PENINSULA_KITCHEN,
     },
     {
         title: "Straight Kitchen",
         image: img6,
+        path: ROUTES.STRAIGHT_KITCHEN,
     },
 ];
 
@@ -48,14 +56,17 @@ function KitchenCategories() {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
                     {kitchens.map((kitchen) => (
-                        <article
+                        <Link
                             key={kitchen.title}
+                            to={kitchen.path}
                             className="group cursor-pointer"
                         >
                             <div className="overflow-hidden">
                                 <img
                                     src={kitchen.image}
                                     alt={kitchen.title}
+                                    loading="lazy"
+                                    decoding="async"
                                     className="
                     h-[380px]
                     w-full
@@ -77,7 +88,7 @@ function KitchenCategories() {
                                     {kitchen.title}
                                 </h3>
                             </div>
-                        </article>
+                        </Link>
                     ))}
                 </div>
             </Container>

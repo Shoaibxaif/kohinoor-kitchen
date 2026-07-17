@@ -9,37 +9,38 @@ import chairImg from "@/assets/images/furniture/chair.jpg";
 import diningImg from "@/assets/images/furniture/dining.jpg";
 
 import { NavLink } from "react-router-dom";
+import { ROUTES } from "@/constants/routes";
 
 const furnitureItems = [
     {
         title: "Wardrobes",
         image: wardrobeImg,
-        path: "#",
+        path: ROUTES.WARDROBES,
     },
     {
         title: "Beds",
         image: bedImg,
-        path: "#",
+        path: ROUTES.BEDS,
     },
     {
         title: "Sofas",
         image: sofaImg,
-        path: "#",
+        path: ROUTES.SOFAS,
     },
     {
         title: "TV Panels",
         image: tvPanelImg,
-        path: "#",
+        path: ROUTES.TV_PANELS,
     },
     {
         title: "Chairs",
         image: chairImg,
-        path: "#",
+        path: ROUTES.DINING_FURNITURE,
     },
     {
         title: "Dining Tables",
         image: diningImg,
-        path: "#",
+        path: ROUTES.DINING_FURNITURE,
     },
 ];
 
@@ -63,8 +64,10 @@ function FurnitureCategories() {
                             <article>
                                 <div className="overflow-hidden">
                                     <img
-                                        src={item.image}
-                                        alt={item.title}
+                                    src={item.image}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    decoding="async"
                                         className="
                       h-[380px]
                       w-full

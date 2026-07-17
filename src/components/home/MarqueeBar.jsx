@@ -12,7 +12,7 @@ const items = [
 function MarqueeBar() {
     return (
         <section className="bg-[#1a1a18] overflow-hidden py-3">
-            <div className="marquee-track">
+            <div className="marquee-track motion-reduce:animate-none">
                 {[...items, ...items].map((item, index) => (
                     <div
                         key={index}

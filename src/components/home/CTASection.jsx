@@ -1,5 +1,6 @@
 import Container from "@/components/common/Container";
 import Button from "@/components/common/Button";
+import { SITE } from "@/constants/siteConfig";
 
 function CTASection() {
     return (
@@ -57,7 +58,7 @@ function CTASection() {
 
                         <Button
                             variant="accent"
-                            href="tel:+919876543210"
+                            href={`tel:${SITE.phone}`}
                         >
                             Call Now
                         </Button>
