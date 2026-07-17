@@ -1,6 +1,7 @@
 import Container from "@/components/common/Container";
 import Button from "@/components/common/Button";
 import { SITE } from "@/constants/siteConfig";
+import { ROUTES } from "@/constants/routes";
 
 function CTASection() {
     return (
@@ -51,8 +52,8 @@ function CTASection() {
                         space, and aesthetic preferences.
                     </p>
 
-                    <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                        <Button>
+                    <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-4 justify-center">
+                        <Button to={ROUTES.CONTACT}>
                             Get Free Consultation
                         </Button>
 

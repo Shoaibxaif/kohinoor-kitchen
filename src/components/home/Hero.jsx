@@ -50,12 +50,15 @@ function Hero() {
               Designing and manufacturing premium modular kitchens, wardrobes, TV panels, beds, sofas, and custom furniture for modern homes across Delhi NCR.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 mt-10">
-              <Button>
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-10">
+              <Button
+                to={ROUTES.CONTACT}
+              >
                 Get Free Consultation
               </Button>
 
               <Button
+                variant="link"
                 to={ROUTES.PROJECTS}
                 className="
     gap-2

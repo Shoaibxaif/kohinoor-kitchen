@@ -19,6 +19,8 @@ const Button = ({
     text-sm
     uppercase
     tracking-[0.15em]
+    text-center
+    leading-tight
     transition-all
     duration-300
     cursor-pointer

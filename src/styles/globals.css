@@ -10,33 +10,35 @@
     --border: #e8e4dc;
 }
 
-* {
-    box-sizing: border-box;
-}
+@layer base {
+    * {
+        box-sizing: border-box;
+    }
 
-html {
-    scroll-behavior: smooth;
-}
+    html {
+        scroll-behavior: smooth;
+    }
 
-body {
-    font-family: "DM Sans", sans-serif;
-    background: var(--cream);
-    color: var(--dark);
-    overflow-x: hidden;
-}
+    body {
+        font-family: "DM Sans", sans-serif;
+        background: var(--cream);
+        color: var(--dark);
+        overflow-x: hidden;
+    }
 
-img {
-    max-width: 100%;
-    display: block;
-}
+    img {
+        max-width: 100%;
+        display: block;
+    }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 
-button {
-    cursor: pointer;
+    button {
+        cursor: pointer;
+    }
 }
 
 @keyframes marquee {
