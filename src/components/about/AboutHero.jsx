@@ -69,7 +69,7 @@ function AboutHero() {
                 <ArrowRight size={18} />
               </Button>
 
-              <Button variant="outline" to={ROUTES.GALLERY}>
+              <Button variant="outline" to={ROUTES.PROJECTS}>
                 View Projects
               </Button>
             </div>
