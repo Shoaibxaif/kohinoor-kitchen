@@ -1,6 +1,7 @@
 import Container from "@/components/common/Container";
 import SectionHeading from "@/components/common/SectionHeading";
 import Button from "@/components/common/Button";
+import { ROUTES } from "@/constants/routes";
 
 import kitchenImage from "@/assets/images/hero-kitchen.jpg";
 
@@ -52,7 +53,7 @@ function WhyKohinoor() {
             ))}
           </div>
 
-          <Button variant="accent" className="mt-12">
+          <Button variant="accent" className="mt-12" to={ROUTES.CONTACT}>
             Book Free Consultation
           </Button>
         </div>

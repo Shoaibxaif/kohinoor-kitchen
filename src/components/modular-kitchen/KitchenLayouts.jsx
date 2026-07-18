@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Container from "@/components/common/Container";
 import SectionHeading from "@/components/common/SectionHeading";
@@ -69,14 +69,22 @@ function KitchenLayouts() {
 
         <div className="grid lg:grid-cols-2 gap-8 mt-16">
           {layouts.map((layout) => (
-            <article
+            <Link
               key={layout.title}
+              to={layout.path}
               className="
                 group
+                block
                 bg-white
                 border
                 border-[#e8e4dc]
                 overflow-hidden
+                transition-shadow
+                hover:shadow-lg
+                focus:outline-none
+                focus-visible:ring-2
+                focus-visible:ring-[#C8A97A]
+                focus-visible:ring-offset-2
               "
             >
               <div className="overflow-hidden">
@@ -114,8 +122,7 @@ function KitchenLayouts() {
                   {layout.description}
                 </p>
 
-                <NavLink
-                  to={layout.path}
+                <span
                   className="
                     mt-8
                     inline-flex
@@ -131,9 +138,9 @@ function KitchenLayouts() {
                 >
                   Explore Layout
                   <ArrowRight size={18} />
-                </NavLink>
+                </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </Container>

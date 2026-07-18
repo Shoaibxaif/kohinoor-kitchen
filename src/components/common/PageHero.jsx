@@ -73,6 +73,8 @@ function PageHero({
                                 {primaryAction && (
                                     <Button
                                         variant="accent"
+                                        to={primaryAction.to}
+                                        href={primaryAction.href}
                                         onClick={primaryAction.onClick}
                                     >
                                         {primaryAction.label}
@@ -82,6 +84,8 @@ function PageHero({
                                 {secondaryAction && (
                                     <Button
                                         variant="outline-light"
+                                        to={secondaryAction.to}
+                                        href={secondaryAction.href}
                                         onClick={secondaryAction.onClick}
                                     >
                                         {secondaryAction.label}

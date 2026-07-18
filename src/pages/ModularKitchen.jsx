@@ -9,6 +9,7 @@ import FeaturedProjects from "@/components/home/FeaturedProjects";
 import Testimonials from "@/components/home/Testimonials";
 import FAQ from "@/components/modular-kitchen/FAQ";
 import CTASection from "@/components/home/CTASection";
+import { ROUTES } from "@/constants/routes";
 
 function ModularKitchen() {
   return (
@@ -20,11 +21,11 @@ function ModularKitchen() {
         image={heroImage}
         primaryAction={{
           label: "Get Free Consultation",
-          onClick: () => console.log("CTA"),
+          to: ROUTES.CONTACT,
         }}
         secondaryAction={{
           label: "View Projects",
-          onClick: () => console.log("Projects"),
+          to: ROUTES.PROJECTS,
         }}
       />
       <WhyKohinoor />
