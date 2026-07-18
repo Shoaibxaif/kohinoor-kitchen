@@ -1,4 +1,5 @@
 import Button from "@/components/common/Button";
+import { ROUTES } from "@/constants/routes";
 
 function LayoutHero({
   title,
@@ -6,7 +7,7 @@ function LayoutHero({
   description,
   image,
   buttonText = "Book Free Consultation",
-  buttonLink = "#",
+  buttonLink = ROUTES.CONTACT,
 }) {
   return (
     <section className="relative h-[70vh] min-h-[600px] overflow-hidden">
@@ -68,7 +69,7 @@ function LayoutHero({
 
             {/* CTA */}
             <div className="mt-12 flex flex-wrap gap-4">
-              <Button variant="accent" href={buttonLink}>
+              <Button variant="accent" to={buttonLink}>
                 {buttonText}
               </Button>
             </div>
