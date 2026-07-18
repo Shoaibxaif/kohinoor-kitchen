@@ -1,15 +1,11 @@
-import { ArrowRight } from "lucide-react";
+
 
 import Container from "@/components/common/Container";
 
-import { ROUTES } from "@/constants/routes";
-
 import heroImage from "@/assets/images/projects/hero.png";
-import Button from "@/components/common/Button";
-import { useNavigate } from "react-router-dom";
 
 function ProjectsHero() {
-  const navigate = useNavigate();
+
   return (
     <section className="relative overflow-hidden bg-[#f7f5f0]">
       <Container>
@@ -59,23 +55,7 @@ function ProjectsHero() {
               to reflect the homeowner's lifestyle, space, and personality.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Button
-                variant="primary"
-                className="gap-2"
-                onClick={() => navigate(ROUTES.CONTACT)}
-              >
-                View Projects
-                <ArrowRight size={18} />
-              </Button>
 
-              <Button
-                variant="outline"
-                onClick={() => navigate(ROUTES.CONTACT)}
-              >
-                Free Consultation
-              </Button>
-            </div>
 
             {/* Stats */}
 
