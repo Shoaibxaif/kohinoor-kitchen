@@ -86,7 +86,25 @@ function ContactForm() {
               </div>
               <textarea name="message" rows={6} placeholder="Tell us about your project..." className="w-full resize-none border border-[#e8e4dc] px-5 py-4 outline-none focus:border-[#C8A97A]" />
               <Button type="submit" variant="primary" className="w-full" disabled={submissionState === "sending"}>{submissionState === "sending" ? "Sending Request..." : "Get Free Design Consultation"}</Button>
-              {submissionState === "success" && <p role="status" className="text-sm text-green-700">Thank you—your consultation request has been sent.</p>}
+              {submissionState === "success" && (
+                <div className="rounded-md border border-[#C8A97A] bg-[#fdf9f3] p-5">
+                  <h4 className="font-semibold text-[#1a1a18]">
+                    ✨ Your enquiry has been received.
+                  </h4>
+
+                  <p className="mt-2 text-sm text-[#5f5f5f] leading-6">
+                    Thank you for choosing <strong>Kohinoor Interior</strong>.
+                    Our design consultant will review your requirements and get in touch
+                    within the next <strong>24 hours</strong>.
+                  </p>
+
+                  <p className="mt-3 text-sm text-[#5f5f5f]">
+                    📞 Need immediate assistance?
+                    <br />
+                    Call us at <strong>+91 8929120505</strong>
+                  </p>
+                </div>
+              )}
               {submissionState === "error" && <p role="alert" className="text-sm text-red-700">We could not send your request. Please try again or call us directly.</p>}
               {submissionState === "configuration-error" && <p role="alert" className="text-sm text-red-700">The contact form is not configured yet. Please contact us by phone.</p>}
               <div className="flex flex-wrap gap-6 border-t pt-6 text-sm text-[#6b6b66]"><span>✓ Free Consultation</span><span>✓ Free Site Visit</span><span>✓ 24-Hour Response</span></div>
